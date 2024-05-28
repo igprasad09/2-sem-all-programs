@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Content Example</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <button id="copyButton">Copy Program</button>
+    <div id="content">
+        <pre style="font-size: 20px;">void main()
+
+            {
+            
+            int n;
+            
+            int toh(int n, char a, char b,char c);
+            
+            clrscr();
+            
+            printf("Enter the number of discs : ");
+            
+            scanf("%d",&n);
+            
+            toh(n, 'S','T','D');
+            
+            getch();
+            
+            }
+            
+            int toh(int n,char a,char b,char c)
+            
+            {
+            
+            if(n=1)
+            
+            printf("\nMove the disc from %c to %c",a,c);
+
+            else
+            
+            {
+            
+            toh(n-1,a,c,b);
+            
+            printf("\nMove the disc from %c to %c",a,c); 
+            toh(n-1,b,a,c);
+            
+            }
+            
+            }</pre>
+    </div>
+    
+
+    <script src="script2.js"></script>
+</body>
+</html>

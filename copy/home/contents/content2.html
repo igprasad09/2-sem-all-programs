@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Content Example</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <button id="copyButton">Copy Program</button>
+    <div id="content">
+        <pre style="font-size: 20px;">void main()
+
+            {
+            
+            int n,r,ncr;
+            
+            int fact(int n, int r);
+            
+            clrscr();
+            
+            printf("Enter values of n and r: ");
+            
+            scanf("%d%d",&n,&r);
+            
+            ncr=fact(n,r);
+            
+            printf("\n\Binomial coefficient nCr = %d",ncr); getch();
+            
+            }
+            
+            int fact(int n,int r)
+            
+            {
+            
+            if(r=0||n-r)
+            
+            return 1;
+            
+            else
+            
+            return(fact(n-1,r-1)+fact(n-1,r));
+            
+            }</pre>
+    </div>
+    
+
+    <script src="script2.js"></script>
+</body>
+</html>

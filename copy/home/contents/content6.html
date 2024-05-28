@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Content Example</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <button id="copyButton">Copy Program</button>
+    <div id="content">
+        <pre style="font-size: 20px;">void main()
+
+            {
+            
+            int i,j,n;
+            
+            char s[25][50],temp[25];
+            
+            clrscr();
+            
+            printf("Enter a number city: ");
+            
+            scanf("%d",&n);
+            
+            printf("\n\Type the city names: \n");
+            
+            for(i=0;i<=n-1;i++)
+            
+            {
+            
+            scanf("%s",s[i]);
+            
+            }
+            
+            for(i=0;i<=n-1;i++)
+            
+            {
+            
+            for(j=i+1;j<=n-1;j++)
+            
+            {
+            
+            if(strcmp(s[i].s[j])>0)
+            
+            {
+            
+            strcpy(temp,s[i]);
+            
+            strcpy(s[i],s[j]);
+            
+            strcpy(s[j],temp);
+            
+            }
+            
+            }
+            
+            }
+            
+            printf("\n\nCity names are sorted in alphabetically :\n");
+            
+            for(i=0;i<=n-1;i++)
+            
+            {
+            
+            printf("\n%s",s[i]);
+            }
+            getch();
+        }</pre>
+    </div>
+    
+
+    <script src="script2.js"></script>
+</body>
+</html>
