@@ -1,2 +1,2 @@
-# 2-sem-all-programs
+# 2-sem
 this is for reducing a time of writing a code. 
